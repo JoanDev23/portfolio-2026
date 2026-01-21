@@ -1,0 +1,42 @@
+/* Modern Reset - Inspirado en Normalize pero simplificado */
+
+// 1. Box sizing global (Incluye padding y border en el ancho total)
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+// 2. Quitar márgenes por defecto de elementos comunes
+body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
+  margin: 0;
+}
+
+// 3. Configurar el cuerpo para una mejor experiencia
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: sans-serif; // O tu variable de fuente
+  -webkit-font-smoothing: antialiased;
+}
+
+// 4. Hacer que las imágenes sean fáciles de manejar
+img, picture {
+  max-width: 100%;
+  display: block;
+}
+
+// 5. Heredar fuentes para inputs y botones
+button, input, select, textarea {
+  font: inherit;
+}
+
+// 6. Quitar decoraciones de listas y enlaces (Opcional pero recomendado)
+ul, ol {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

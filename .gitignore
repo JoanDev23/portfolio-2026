@@ -22,3 +22,20 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# --- Ajustes extra para Portfolio ---
+
+# Archivos temporales de SASS
+.sass-cache/
+*.css.map
+*.scss.map
+
+# Archivos de entorno (donde guardarás contraseñas o APIs en el futuro)
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Capturas de pantalla o notas personales que no quieras en el repo
+/notes/
+/screenshots/
