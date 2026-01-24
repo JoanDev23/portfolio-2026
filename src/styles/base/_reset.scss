@@ -12,11 +12,21 @@ body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
 
 // 3. Configurar el cuerpo para una mejor experiencia
 body {
-  min-height: 100vh;
+  /* Convertimos el body en un contenedor flexible */
+  display: flex;
+  flex-direction: column;
+
+  /* 100dvh es la unidad moderna de 2026 que se ajusta 
+     perfectamente a las pantallas de móviles */
+  min-height: 100dvh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: sans-serif; // O tu variable de fuente
   -webkit-font-smoothing: antialiased;
+}
+
+main {
+  flex-grow: 1;
 }
 
 // 4. Hacer que las imágenes sean fáciles de manejar
