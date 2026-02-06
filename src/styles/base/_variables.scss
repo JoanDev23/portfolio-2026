@@ -1,0 +1,42 @@
+
+// API Inter
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+//API DM sans
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+//fonts
+$font-inter: 'Inter', sans-serif;
+$font-dm-sans: 'DM Sans', sans-serif;
+
+// COLORS
+$olive-leaf: #606c38ff;
+$black-forest: #283618ff;
+$cornsilk: #fefae0ff;
+$sunlit-clay: #dda15eff;
+$copperwood: #bc6c25ff;
+$border-line: #00000014;
+$neumorphism-shadow: #e0e0e0;
+
+
+
+//CSS CUSTOM PROPERTIES
+:root {
+
+    //CSS FONTS
+    --font-header: #{$font-inter};
+    --font-body: #{$font-dm-sans};
+
+    //CSS COLORS
+    --color-primary: #{$cornsilk};
+    --neumor-shadow: #{$neumorphism-shadow};
+
+    //CSS FONTS COLORS
+    --color-hero-title: #{$black-forest};
+    --color-paragrahp: #{$olive-leaf};
+
+    --line-separator: #{$border-line};
+
+}
+
+

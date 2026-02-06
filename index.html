@@ -5,15 +5,33 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio-2026</title>
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
   </head>
   <body>
 
     <!--Header-->
     <header class="header">
-      <div class="header__logo">Joan Jimenez</div>
       
-      <nav class="header__container">
-        <ul class="header__container--nav">
+      <nav class="header__logo">
+        <a href="/">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-memory-stick-icon lucide-memory-stick"><path d="M12 12v-2"/><path d="M12 18v-2"/><path d="M16 12v-2"/><path d="M16 18v-2"/><path d="M2 11h1.5"/><path d="M20 18v-2"/><path d="M20.5 11H22"/><path d="M4 18v-2"/><path d="M8 12v-2"/><path d="M8 18v-2"/><rect x="2" y="6" width="20" height="10" rx="2"/></svg>
+        </a>
+
+        <span>Joan Jimenez</span>
+      </nav>
+
+      <aside class="header__sidebar" aria-label="open-sidebar">
+        <button id="btn-sidebar">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-panel-right-open-icon lucide-panel-right-open"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M15 3v18"/><path d="m10 15-3-3 3-3"/></svg>
+        </button>
+      </aside>
+      
+      <nav class="header__nav">
+        <ul class="header__container">
           <li><a href="">Home</a></li>
           <li><a href="">About Me</a></li>
           <li><a href="">Contact</a></li>
@@ -25,22 +43,23 @@
 
     <!--Main-->
     <main>
-      <section id="hero" class="hero">
+      <section id="hero" class="hero container-center">
+        <img src="./src/assets/images/image.png" alt="image joan jimenez ramos">
         <h1 class="hero__title">Joan Jimenez Ramos</h1>
         <p>Desarrollador de Aplicaciones Web</p>
 
         <div class="hero__actions">
-          <button id="button-projects" class="hero__button">Projects</button>
-          <button id="button-contact" class="hero__button">Contact</button>
+          <button id="button-projects">Projects</button>
+          <button id="button-contact">Contact</button>
         </div>
         
 
       </section>
 
       <!--about me-->
-      <section id="about-me" class="about-me">
+      <section id="about-me" class="about-me container-center">
         <h2>About me</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni delectus accusamus, quaerat sunt animi ratione soluta quo aliquid cupiditate perferendis iste nostrum ut quae distinctio minus magnam eaque odio nihil.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
         
       </section>

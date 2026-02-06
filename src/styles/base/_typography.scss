@@ -1,0 +1,21 @@
+
+@use './variables' as vars;
+
+body {
+    font-family: vars.$font-inter;
+    font-weight: 400;
+
+}
+
+h1, h2, h3 {
+    font-family: vars.$font-dm-sans;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+button {
+    font-family: vars.$font-dm-sans;
+    font-weight: 500;
+    font-size: 1.4rem;
+}

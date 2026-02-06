@@ -1,4 +1,37 @@
 
-body {
-    background-color: white;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: .7rem .9rem;
+    background-color: var(--color-primary);
+    border-bottom: 1px solid var(--line-separator);
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        
+        a {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__sidebar {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    &__nav {
+        display: none;
+        &__container {
+
+        }
+    }
+
+    
 }

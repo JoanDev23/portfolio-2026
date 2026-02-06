@@ -15,17 +15,18 @@ body {
   /* Convertimos el body en un contenedor flexible */
   display: flex;
   flex-direction: column;
-
+  
   /* 100dvh es la unidad moderna de 2026 que se ajusta 
      perfectamente a las pantallas de móviles */
   min-height: 100dvh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-  font-family: sans-serif; // O tu variable de fuente
+
+  text-rendering: optimizeLegibility; /* Mejor para la experiencia de lectura */
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; /* Soporte para Firefox en macOS */
 }
 
 main {
+  /* Ocupa el espacio disponible, asegurando que el footer se mantenga al final */
   flex-grow: 1;
 }
 
@@ -37,7 +38,12 @@ img, picture {
 
 // 5. Heredar fuentes para inputs y botones
 button, input, select, textarea {
-  font: inherit;
+  appearance: none; //Esta propiedad elimina la estética nativa del sistema operativo.
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  height: 24px;
 }
 
 // 6. Quitar decoraciones de listas y enlaces (Opcional pero recomendado)
