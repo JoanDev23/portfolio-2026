@@ -1,10 +1,12 @@
 
 .about-me {
-    padding: 1rem;
+    padding: .6rem;
     min-height: 35vh;
+    background-color: var(--bg-color-about-me);
 
     h2 {
-        margin-bottom: 1rem;
+        color: var(--color-text-secundary);
+        margin-bottom: .7rem;
     }
     p {
         text-align: center;
